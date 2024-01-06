@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="University Student. My portfolio of projects. Based in Paynesville, Victoria.">
+    <meta name="title" property="og:title" content="Ash's Portfolio">
+    <meta property="og:type" content="Website">
+    <title>Ash's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Space+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/30f408ef4a.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img class="avatar" src="img/avatar.jpeg" alt="Profile Picture">
+            <h1>~ Ashley O'Connor ~</h1>
+            <h2>University Student</h2>
+            <ul>
+                <li><a class="resume" href="resume.pdf" download><img src="./img/cv.png" alt="cv icon"
+                            height="40px"></a></li>
+                <li><a href="https://github.com/AshOConnor" target="_blank"><img
+                            src="https://skillicons.dev/icons?i=github" alt="github icon" height="40"></a></li>
+                <li><a href="https://www.linkedin.com/in/ash-oconnor/" target="_blank"><img
+                            src="https://skillicons.dev/icons?i=linkedin" alt="linkedin icon" height="40"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="aboutme" id="aboutme">
+            <div class="aboutme-header">
+                <h2>About Me</h2>
+            </div>
+            <div class="container">
+                <div class="aboutme-content">
+                    <p>
+                        <i class="fas fa-graduation-cap"></i>
+                        <br>I'm currently pursuing a Bachelor of Information Technology, majoring in Software
+                        Engineering.
+                        <br><br>
+                        <i class="fas fa-laptop-code"></i>
+                        <br>My tech journey involves a passion for programming and web
+                        development. I've dipped my toes into various languages and
+                        technologies, including Python, HTML, CSS, JavaScript and PHP.
+                        Building and creating in the digital space excites me.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="project" id="project">
+            <div class="project-header">
+                <h2>Featured Projects</h2>
+            </div>
+            <div class="container">
+                <div class="project-content" id="projects">
+                    <!-- Projects will be dynamically added here -->
+                </div>
+            </div>
+            <a href="#" class="view-all-button" id="view-all-button">View All</a>
+        </section>
+        <section class="skills" id="skills">
+            <div class="skills-header">
+                <h2>Skills</h2>
+            </div>
+            <div class="skills-content">
+                <p>
+                    <img src="https://skillicons.dev/icons?i=html,css,php,js,sqlite,python,vscode" alt="skills">
+                </p>
+            </div>
+        </section>
+        <!-- COMMENTED OUT UNTIL I HAVE LEARNT HOW TO RECEIVE THE SUBMISSIONS TO EMAIL.
+            <section class="contact">  
+            <div class="contact-header">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="container">
+                <div class="form">
+                    <form id="form" action="index.html" method="get">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" placeholder="Ash O'Connor" required><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="name@ashoconnor.dev" required><br>
+                        <label for="comment">Comment:</label><br>
+                        <textarea id="comment" name="comment" rows="6" placeholder=""></textarea><br>
+                    </form>
+                </div>
+            </div>
+            <input type="button" value="Submit" id="submitButton" class="submit-button">
+        </section> -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    </main>
+    <footer class="footer">
+        &copy;
+        <script>document.write(new Date().getFullYear());</script> Ash O'Connor
+        <p><a href="https://www.flaticon.com/free-icons/cv" title="CV icons">CV icons created by Freepik - Flaticon</a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

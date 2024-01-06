@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Space Mono", Arial, serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: white;
+  background: #00010d;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.navbar h1 {
+  color: #d9d9d9;
+  font-size: 2.2rem;
+  font-family: "Kaushan Script", cursive;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.navbar h2 {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 400;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.navbar ul {
+  display: block;
+  text-align: center;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  zoom: 1;
+}
+
+.navbar li a {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.aboutme {
+  background-color: #00010d;
+}
+
+.aboutme-header h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+.aboutme-content p {
+  text-align: left;
+  font-size: 0.8rem;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.project h2 {
+  text-align: center;
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+.project p {
+  font-size: 0.8rem;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.project h3 {
+  text-align: center;
+  font-weight: 400;
+}
+
+.project-card {
+  margin-bottom: 10px;
+  background: #4d4d4d;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.project-card img {
+  border-radius: 10px;
+  display: flex;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.view-all-button {
+  display: block !important;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  border-radius: 25px;
+  background-color: #4d4d4d;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 10px;
+}
+
+.view-all-button:hover {
+  background-color: #4d4d4d;
+  color: #d9d9d9;
+}
+
+.skills h2 {
+  text-align: center;
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+.skills p {
+  text-align: center;
+}
+
+/* .contact-header h2 {
+  text-align: center;
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+form {
+  padding: 5px;
+}
+
+.form {
+  margin-bottom: 10px;
+  background: #4d4d4d;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  font-family: "Space Mono", Arial, serif;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border-style: none;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.submit-button {
+  display: block !important;
+  font-family: "Space Mono", Arial, serif;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 0.8rem;
+  border-radius: 25px;
+  background-color: #4d4d4d;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: none;
+}
+
+.submit-button:hover {
+  background-color: #333;
+} */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 25px;
+  font-size: 1rem;
+  opacity: 50%;
+}
+
+#myBtn:hover {
+  background-color: white;
+  color: black;
+}
+
+.fa-solid {
+  padding: 5px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 10px;
+}
+
+footer p {
+  font-size: 0.3rem;
+}
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 40em) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutme-content {
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .project-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1400px;
+  }
+
+  .project-card {
+    width: 380px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  /* .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 600px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 600px;
+  } */
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 48em) {
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 64em) {
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 80em) {
+}
