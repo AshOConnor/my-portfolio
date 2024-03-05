@@ -105,6 +105,28 @@ function displayProjects(limit) {
   }
 }
 
+function scrollToFirstProject() {
+  const firstProject = document.querySelector(".project-card");
+  firstProject.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function displayProjects(limit) {
+  projectsContainer.innerHTML = ""; // Clear the container
+
+  const endIndex = Math.min(limit, projects.length); // Ensure we don't exceed the number of projects
+
+  for (let i = 0; i < endIndex; i++) {
+    const projectCard = createProjectCard(projects[i]);
+    projectsContainer.appendChild(projectCard);
+  }
+
+  if (limit < projects.length) {
+    viewAllButton.style.display = "block";
+  } else {
+    viewAllButton.style.display = "none";
+  }
+}
+
 viewAllButton.addEventListener("click", (event) => {
   event.preventDefault(); // Prevent default action of the anchor tag
 
@@ -114,6 +136,7 @@ viewAllButton.addEventListener("click", (event) => {
     viewAllButton.textContent = "View Less";
   } else {
     displayProjects(cardLimit);
+    scrollToFirstProject();
     viewAllButton.textContent = "View All";
   }
 
