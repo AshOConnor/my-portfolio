@@ -84,6 +84,7 @@ function createProjectCard(project) {
   return projectCard;
 }
 
+// Scroll for project view button
 function scrollToLastProject() {
   const projects = document.querySelectorAll(".project-card");
   const lastProject = projects[projects.length - 2];
